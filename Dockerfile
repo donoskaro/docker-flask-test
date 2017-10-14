@@ -15,7 +15,7 @@ ADD . /application
 
 # Install all Python packages specified in requirements.txt
 RUN pip3.6 install uwsgi
-RUN pip3.6 install -r requirements.txt
+RUN pip3.6 install -r /application/requirements.txt
 
 # Set the default directory for the environment
 ENV HOME /application
