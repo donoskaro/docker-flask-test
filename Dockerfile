@@ -24,4 +24,4 @@ WORKDIR /application
 # Expose port 8000 for uwsgi
 EXPOSE 8000
 
-ENTRYPOINT ["uwsgi", "--http", "0.0.0.0:8000", "module", "app:app", "--processes", "1", "--threads", "8"]
+ENTRYPOINT ["uwsgi", "--http", "0.0.0.0:8000", "--module", "app:app", "--processes", "1", "--threads", "8"]
