@@ -7,6 +7,7 @@ RUN yum -y update
 RUN yum -y install https://centos7.iuscommunity.org/ius-release.rpm
 RUN yum -y install python36u
 RUN yum -y install python36u-pip
+RUN yum -y install python36u-devel
 RUN yum -y install gcc
 
 # Copy the required application files
